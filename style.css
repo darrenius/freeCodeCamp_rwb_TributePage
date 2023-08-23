@@ -12,7 +12,7 @@ body{
 }
 
 .header-footer-sections{
-  display: block;
+  display: flex;
   width: 100%;
   min-width: 100vw;
   height: 50px;
@@ -22,17 +22,18 @@ body{
 }
 
 .page-sections {
-  display: block;
+  display: flex;
   width: 100%;
   min-width: 100%;
-  min-height: 30%;
+  min-height: 100%;
   margin:0 auto;
   box-sizing: border-box;
 }
 
 
   #div-header{
-    display:block;
+    display:flex;
+    justify-content: space-around;
     box-sizing: border-box;
     width: 100%;
     height: 50px;
@@ -42,78 +43,58 @@ body{
     text-align: center;
     box-shadow: 5px 4px 20px gray;
     position: fixed;
-    padding: auto auto;
-    padding: 0 0;
+    padding: 0 0 ;
+    margin: 0 auto;
     overflow: none;
     z-index: 1;
   }
-
-  #div-header #title{
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto ;
-;
-  }
   
   #div-main{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     box-sizing: border-box;
     width: 100%;
+    max-width: 100%;
     height: 100%;
     position: relative;
     top: 50px;
   }
 
-  .image-section{
-    width: 90%;
-    min-width: 90%;
-    max-width: 90%;
-    height: 90%;
-    max-height: 90%;
-    display: flex;
-  }
 
   #div-image{
     display: flex;
-    flex-direction: column;
-    background-color: aqua;
+    flex-direction: row;
+    background-color: rgb(230, 233, 233);
+    justify-content:space-around;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width:100%;
+    max-height: 100%;
+
   }
 
   #img-div-text{
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    max-width: 60%;
-    min-width: 100%;
+    min-width: 400px;
     height: 100%;
-    
-    flex-wrap: wrap;
+    min-height: 100%;
     box-sizing: border-box;
-  }
-
-  #img-div-text h1 h2{
-    border: 1px solid black;
     width: 60%;
-    max-width: 60%;
-    min-width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    box-sizing: border-box;
+    padding-left: 20px;
   }
-
 
   #img-div{
-    border: 1px solid black;
-    width: 40%;
-    max-width: 40%;
-    min-width: 40%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    height: 100%;
+    min-height: 100%;
     box-sizing: border-box;
+    width: 40%;
   }
 
   #div-tribute-info{
@@ -127,10 +108,26 @@ body{
     background-color: yellow;
     overflow: none;
     z-index: 1;
+    height: 100px;
   }
   
   #image{
-    max-width: 40%;
+    max-height: 100%;
     height: auto;
     margin: auto auto;
+  }
+
+  #section-1-header{
+    font-size: 10rem;
+    white-space: 0;
+    line-height: 0.8;
+    color: rgb(44, 44, 44);
+    /*text-shadow: 5px 4px 15px gray ;*/
+    box-sizing: border-box;
+  }
+
+  #section-1-header:hover{
+    color: magenta;
+    text-shadow: 10px 10px cyan ;
+    cursor: pointer;
   }
