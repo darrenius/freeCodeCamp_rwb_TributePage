@@ -4,10 +4,11 @@ body{
   color: black;
   height: 100%;
   width: 100%;
-  min-width: 100vw;
+  max-width: 100%;
   min-height: 100vh;
   margin: 0 auto ;
   font-family: "Roboto", sans-serif;
+  padding: 0;
 
 }
 
@@ -32,10 +33,10 @@ body{
 
 
   #div-header{
-    display:flex;
-    justify-content: space-around;
+    display:table;
     box-sizing: border-box;
-    width: 100%;
+    width: 60%;
+    max-width: 100%;
     height: 50px;
     background-color: black;
     color:white;
@@ -49,17 +50,16 @@ body{
     z-index: 1;
   }
   
-  #div-main{
+  #main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 100%;
-    max-width: 100%;
     height: 100%;
     position: relative;
-    top: 50px;
+    
   }
 
 
@@ -71,50 +71,82 @@ body{
     align-items: center;
     box-sizing: border-box;
     flex-wrap: wrap;
+    max-width: 100%;
     width:100%;
     max-height: 100%;
+    line-height: 0px;
 
   }
+
 
   #img-div-text{
     display: flex;
     flex-direction: column;
-    min-width: 400px;
+    min-width: 50%;
     height: 100%;
     min-height: 100%;
     box-sizing: border-box;
-    width: 60%;
-    padding-left: 20px;
+    max-width: 50%;
+    width: 50%;
+    padding: 30px;
+
   }
 
   #img-div{
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
-    min-width: 100px;
+    min-width: 50%;
     height: 100%;
     min-height: 100%;
-    box-sizing: border-box;
-    width: 40%;
+    max-width: 50%;
+    padding: 0;
   }
 
-  #div-tribute-info{
+  #tribute-info{
     display: block;
     background-color: magenta;
     overflow: none;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    line-height: 2rem;
   }
 
-  #div-tribute-external-link{
+  
+
+  #tribute-links{
     display: block;
-    background-color: yellow;
+    background-color: rgb(230, 233, 233);
     overflow: none;
-    z-index: 1;
-    height: 100px;
+    height: 50px;
+    width: 100%;
+    min-width: 100%;
+    margin:0 auto;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #tribute-link{
+    text-decoration: none;
+    font-style: oblique;
+  }
+
+  #tribute-link:hover{
+    text-decoration: none;
+    font-style: oblique;
+    color: magenta;
   }
   
   #image{
     max-height: 100%;
-    height: auto;
     margin: auto auto;
+    width: 100%;
+    background-size: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
   }
 
   #section-1-header{
@@ -126,8 +158,45 @@ body{
     box-sizing: border-box;
   }
 
+  #section-1-title{
+    background-color: yellow;
+  }
+
   #section-1-header:hover{
     color: magenta;
-    text-shadow: 10px 10px cyan ;
+    text-shadow: 5px 5px cyan, -5px -5px yellow;
     cursor: pointer;
   }
+
+  ul{
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+
+  #img-caption-text p{
+    display: none;
+  }
+
+  .page-header{
+    font-size: 50px;
+  }
+
+  #subheader-earlyyears{
+    color: cyan;
+  }
+  #subheader-middleyears{
+    color: magenta;
+  }
+  #subheader-lateyears{
+    color: yellow;
+  }
+
+#quote{
+  padding: 10px;
+  font-style: italic;
+  font-size: 20px;
+  color: gray;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
